@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmsVerify Pro | Instant OTP & Virtual Numbers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .view { display: none; }
+        .view-active { display: block; }
+    </style>
+</head>
+<body class="bg-[#f8f9fd] font-sans">
+
+    <div id="view-home" class="view view-active">
+        <nav class="bg-white border-b py-4 px-6 flex justify-between items-center sticky top-0 z-50">
+            <div class="flex items-center space-x-2">
+                <div class="bg-blue-600 p-2 rounded-lg text-white font-bold">ES</div>
+                <span class="text-xl font-bold text-gray-800">SmsVerify Pro</span>
+            </div>
+            <div class="space-x-4">
+                <button onclick="showView('view-login')" class="text-gray-600 font-semibold">Login</button>
+                <button onclick="showView('view-signup')" class="bg-blue-600 text-white px-6 py-2 rounded-lg font-bold shadow-md">Register</button>
+            </div>
+        </nav>
+        <header class="max-w-4xl mx-auto text-center py-20 px-6">
+            <h1 class="text-5xl font-black text-gray-900 mb-6">Buy Cheap Virtual Numbers for OTP</h1>
+            <p class="text-lg text-gray-500 mb-10">Get instant verification for WhatsApp, Telegram, and more. Highly reliable and automated.</p>
+            <button onclick="showView('view-signup')" class="bg-blue-600 text-white px-10 py-4 rounded-xl font-bold text-lg shadow-xl">Get Started Now</button>
+        </header>
+    </div>
+
+    <div id="view-login" class="view min-h-screen flex items-center justify-center p-6">
+        <div class="bg-white p-8 rounded-3xl shadow-xl w-full max-w-md border">
+            <h2 class="text-2xl font-bold text-center mb-6">Welcome Back</h2>
+            <input type="text" placeholder="Username" class="w-full p-4 bg-gray-50 border rounded-xl mb-4 outline-none">
+            <input type="password" placeholder="Password" class="w-full p-4 bg-gray-50 border rounded-xl mb-6 outline-none">
+            <button onclick="showView('view-dashboard')" class="w-full bg-blue-600 text-white py-4 rounded-xl font-bold shadow-lg">Login</button>
+            <p class="text-center mt-6 text-sm text-gray-500">New here? <span onclick="showView('view-signup')" class="text-blue-600 font-bold cursor-pointer">Create Account</span></p>
+        </div>
+    </div>
+
+    <div id="view-signup" class="view min-h-screen flex items-center justify-center p-6">
+        <div class="bg-white p-8 rounded-3xl shadow-xl w-full max-w-md border">
+            <h2 class="text-2xl font-bold text-center mb-6">Create Account</h2>
+            <input type="text" placeholder="Full Name" class="w-full p-4 bg-gray-50 border rounded-xl mb-4 outline-none">
+            <input type="text" placeholder="Username" class="w-full p-4 bg-gray-50 border rounded-xl mb-4 outline-none">
+            <input type="password" placeholder="Password" class="w-full p-4 bg-gray-50 border rounded-xl mb-6 outline-none">
+            <button onclick="showView('view-dashboard')" class="w-full bg-blue-600 text-white py-4 rounded-xl font-bold shadow-lg">Register</button>
+            <p class="text-center mt-6 text-sm text-gray-500">Already a member? <span onclick="showView('view-login')" class="text-blue-600 font-bold cursor-pointer">Login</span></p>
+        </div>
+    </div>
+
+    <div id="view-dashboard" class="view min-h-screen flex">
+        <div class="w-64 bg-white border-r p-6 hidden md:block">
+            <h1 class="text-2xl font-bold text-blue-600 mb-10">SmsVerify Pro</h1>
+            <nav class="space-y-4">
+                <button class="w-full text-left p-3 bg-blue-50 text-blue-600 rounded-xl font-bold"><i class="fa fa-home mr-2"></i>Dashboard</button>
+                <button onclick="alert('Wallet Funding\n\nBank: Moniepoint\nAcc: 5015149648')" class="w-full text-left p-3 text-gray-500 hover:bg-gray-50 rounded-xl"><i class="fa fa-wallet mr-2"></i>Funding</button>
+                <button onclick="window.location.href='https://t.me/SmsService1234'" class="w-full text-left p-3 text-gray-500 hover:bg-gray-50 rounded-xl"><i class="fa fa-headset mr-2"></i>Support</button>
+                <button onclick="showView('view-home')" class="w-full text-left p-3 text-red-500 mt-20"><i class="fa fa-sign-out mr-2"></i>Logout</button>
+            </nav>
+        </div>
+
+        <div class="flex-1 p-6 md:p-10">
+            <div class="bg-blue-600 rounded-3xl p-8 text-white shadow-xl mb-10 flex justify-between items-center">
+                <div>
+                    <p class="opacity-80">Wallet Balance</p>
+                    <h3 class="text-4xl font-black">₦0.00</h3>
+                    <p class="text-xs mt-2 font-bold bg-blue-500 px-3 py-1 rounded-full inline-block">ID: @User123</p>
+                </div>
+                <div class="text-right hidden sm:block">
+                    <p class="text-xs opacity-70">Payment Method</p>
+                    <p class="font-bold">Moniepoint Transfer</p>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl border mb-10 flex flex-col md:flex-row justify-between items-center gap-4">
+                <div>
+                    <h4 class="font-bold text-gray-800">Automatic Funding Active</h4>
+                    <p class="text-sm text-gray-500">Pay to: <span class="font-bold text-gray-800">5015149648</span></p>
+                </div>
+                <button onclick="window.location.href='https://t.me/SmsService1234'" class="bg-blue-600 text-white px-6 py-2 rounded-lg font-bold text-sm">Send Proof</button>
+            </div>
+
+            <h3 class="font-bold text-gray-800 mb-6 uppercase text-sm tracking-widest">Select Service</h3>
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-2xl border hover:border-blue-500 cursor-pointer shadow-sm transition" onclick="alert('Insufficient Balance')">
+                    <i class="fa-brands fa-whatsapp text-4xl text-green-500 mb-2"></i>
+                    <p class="font-bold">WhatsApp</p>
+                    <p class="text-blue-600 font-bold">₦450</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border hover:border-blue-500 cursor-pointer shadow-sm transition" onclick="alert('Insufficient Balance')">
+                    <i class="fa-brands fa-telegram text-4xl text-sky-500 mb-2"></i>
+                    <p class="font-bold">Telegram</p>
+                    <p class="text-blue-600 font-bold">₦350</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showView(viewId) {
+            // Hide all views
+            const views = document.querySelectorAll('.view');
+            views.forEach(v => v.classList.remove('view-active'));
+            
+            // Show requested view
+            document.getElementById(viewId).classList.add('view-active');
+            
+            // Scroll to top automatically
+            window.scrollTo(0, 0);
+        }
+    </script>
+
+</body>
+</html>
